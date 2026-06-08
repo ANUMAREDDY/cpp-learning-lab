@@ -1,0 +1,25 @@
+# Compiled output
+*.exe
+*.out
+*.o
+
+# Build folders
+build/
+bin/
+obj/
+
+# VS Code settings
+.vscode/
+
+# CMake
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
