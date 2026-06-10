@@ -1,6 +1,14 @@
 #include <iostream>
+#include "basics/FindLanguageStandard.h"
+using namespace std;
 
 int main() {
-    std::cout << "unstoppable quantitative developer!" << std::endl;
-    return 0;
+    cout << "unstoppable quantitative developer!" << endl;
+
+    //Basics
+    FindLanguageStandard fls;
+    int result = fls.findLanguageStandard();
+
+
+    return result;
 }
