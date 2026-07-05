@@ -16,7 +16,12 @@ int main() {
 
     //Basics
     WhileLoop wl;
-    io.printInteger(wl.reverseAGivenNumber(12345));
+    wl.printPrimeNumberInRange(1, 100);
+    //io.printBoolean(wl.isAPerfectNumber(28));
+    //io.printBoolean(wl.isArmstrongNumber(153));
+    //io.printInteger(wl.printSumOfDigitsInAGivenNumber(12345));
+    //io.printBoolean(wl.isPalindrome(123215));
+    //io.printInteger(wl.reverseAGivenNumber(12345));
     //io.printInteger(wl.printTotalNumberOfDigitsInAGivenNumber(12345));
     //io.printInteger(wl.productOfAllDigitInAGivenNumber(123));
     //io.printInteger(wl.factorial(10));

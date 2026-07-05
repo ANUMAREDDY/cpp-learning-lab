@@ -15,6 +15,12 @@ class WhileLoop{
         int productOfAllDigitInAGivenNumber(int n);
         int printTotalNumberOfDigitsInAGivenNumber(int n);
         int reverseAGivenNumber(int n);
+        bool isPalindrome(int n);
+        int printSumOfDigitsInAGivenNumber(int n);
+        bool isArmstrongNumber(int n);
+        bool isAPerfectNumber(int n);
+        void printPrimeNumberInRange(int start, int end);
+
 };
 
 #endif

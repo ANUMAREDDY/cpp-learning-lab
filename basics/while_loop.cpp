@@ -124,3 +124,68 @@
         }
         return reverse;
     }
+
+    bool WhileLoop::isPalindrome(int n){
+        int reverse{};
+        int originalNumber{n};
+
+        while(n>0){
+            reverse = reverse*10 + n%10;
+            n/=10;
+        }
+
+        if(originalNumber==reverse){
+            return true;
+        }
+        return false;
+    }
+
+    int WhileLoop::printSumOfDigitsInAGivenNumber(int n){
+        int sum{};
+        while(n>0){
+            sum+=n%10;
+            n/=10;
+        }
+        return sum;
+    }
+
+    bool WhileLoop::isArmstrongNumber(int n){
+        int sum{};
+        int originalNumber{n};
+        while(originalNumber>0){
+            int lastDigit = originalNumber%10;
+            sum+=lastDigit*lastDigit*lastDigit;
+            originalNumber/=10;
+        }
+        return sum == n;
+    }
+
+    bool WhileLoop::isAPerfectNumber(int n){
+    int sum{};
+    int divisor{1};
+    while(divisor<n){
+        if(n%divisor==0){
+            sum+=divisor;
+        }
+        divisor++;
+    }
+    return sum == n;
+}
+
+void WhileLoop::printPrimeNumberInRange(int start, int end){
+    int divisor{1};
+    while(start<=end){
+        int count{};
+        divisor = 1;
+        while(divisor<=start){
+            if(start%divisor==0){
+                count++;
+            }
+            divisor++;
+        }
+        if(count==2){
+            io.printInteger(start);
+        }
+        start++;
+    }
+}
