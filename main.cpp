@@ -10,14 +10,15 @@ int main() {
     //io helper
     IOHelper io;  // Memory is allocated in the stack frame. So, need to delete or use destructor.
 
-    auto booleanInput = io.readBoolean();
-    io.printBoolean(booleanInput);
+    //auto booleanInput = io.readBoolean();
+    //io.printBoolean(booleanInput);
 
 
     //Basics
     WhileLoop wl;
+    wl.printStructuredMultiplicationTable(1, 10, 5);
+    //wl.printOddNumbersInRange(1, 100);
     //wl.whileLoopReverse(n);
-
     //wl.whileLoop();
 
     //FindLanguageStandard fls;

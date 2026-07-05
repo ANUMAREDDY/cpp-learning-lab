@@ -1,6 +1,8 @@
 #include <iostream>
 #include "while_loop.h"
+#include "io_helper.h"
 
+    IOHelper io;  
 
     void WhileLoop::whileLoop(){
         int i{1};
@@ -17,3 +19,34 @@
             n--;
         }
     }
+
+    void WhileLoop::printEvenNumbersInRange(int start, int end){
+
+        while(end>=start){
+            if(start%2==0){
+                io.printInteger(start);
+            }
+            start++;
+        }
+    }
+
+    void WhileLoop::printOddNumbersInRange(int start, int end){
+        while(start<=end){
+            if(start%2!=0){
+                io.printInteger(start);
+            }
+            start++;
+        }
+    }
+
+    void WhileLoop::printStructuredMultiplicationTable(int start, int end, int whichTable){
+
+        while(start<=end){
+            auto structureFormatter = std::to_string(whichTable) + " * " + std::to_string(start) 
+            + " = "+ std::to_string(whichTable*start);
+            io.printString(structureFormatter);
+            start++;
+        }
+    }
+
+
