@@ -49,4 +49,78 @@
         }
     }
 
+    int WhileLoop::sumOfFirstNNaturalNumbers(int n){
+        int sum{};
+        while(n>=1){
+            sum+=n;
+            n--;
+        }
+        return sum;
+    }
 
+    int WhileLoop::sumOfFirstNEvenNumbers(int n){ // 1 to n even numbers sum=?
+        int sum{};
+        int start{1};
+        while(start<=n){
+            if(start%2==0){
+                sum+=start;
+            }
+            start++;
+        }
+        return sum;
+    }
+
+
+    int WhileLoop::sumOfFirstNOddNumbers(int n){ // 1 to n odd numbers sum=?
+        int sum{};
+        int start{1};
+        while(start<=n){
+            if(start%2!=0){
+                sum+=start;
+            }
+            start++;
+        }
+        return sum;
+    }
+
+    int WhileLoop::factorial(int n){
+        int product{1};
+        while(n>0){
+            product*=n;
+            n--;
+        }
+        return product;
+    }
+
+    // Shouldn't use recurssion inside while loop because for F(n) while loos runs n times,
+    // for f(n-1) other n-1 times which produces in exponenetial results.
+
+    int WhileLoop::productOfAllDigitInAGivenNumber(int n){
+        int product{1};
+        while(n>0){
+            int lastDigit = n%10;
+            product*=lastDigit;
+            n/=10;
+        }
+        return product;
+    }
+    // To obtain reminder %
+    //To obtain quotient /
+
+    int WhileLoop::printTotalNumberOfDigitsInAGivenNumber(int n){
+        int count{};
+      while(n>0){
+        count++;
+        n/=10;
+      }
+      return count;
+    }
+
+    int WhileLoop::reverseAGivenNumber(int n){
+        int reverse{};
+        while(n>0){
+            reverse = reverse*10 + n%10;
+            n/=10;
+        }
+        return reverse;
+    }

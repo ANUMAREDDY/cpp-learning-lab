@@ -16,7 +16,13 @@ int main() {
 
     //Basics
     WhileLoop wl;
-    wl.printStructuredMultiplicationTable(1, 10, 5);
+    io.printInteger(wl.reverseAGivenNumber(12345));
+    //io.printInteger(wl.printTotalNumberOfDigitsInAGivenNumber(12345));
+    //io.printInteger(wl.productOfAllDigitInAGivenNumber(123));
+    //io.printInteger(wl.factorial(10));
+    //io.printInteger(wl.sumOfFirstNOddNumbers(10));
+    //io.printInteger(wl.sumOfFirstNNaturalNumbers(100));
+    //wl.printStructuredMultiplicationTable(1, 10, 57);
     //wl.printOddNumbersInRange(1, 100);
     //wl.whileLoopReverse(n);
     //wl.whileLoop();
