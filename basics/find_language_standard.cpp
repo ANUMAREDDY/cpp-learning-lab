@@ -2,8 +2,9 @@
 // Freely redistributable, courtesy of learncpp.com (https://www.learncpp.com/cpp-tutorial/what-language-standard-is-my-compiler-using/)
 
 #include <iostream>
+#include "find_language_standard.h"
 
-class FindLanguageStandard {
+
     const int numStandards = 7;
     // The C++26 stdCode is a placeholder since the exact code won't be determined until the standard is finalized
     const long stdCode[numStandards] = { 199711L, 201103L, 201402L, 201703L, 202002L, 202302L, 202612L};
@@ -58,4 +59,3 @@ class FindLanguageStandard {
 
         return 0;
     }
-};
