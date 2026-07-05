@@ -9,3 +9,11 @@
             i++;
         }
     }
+
+    void WhileLoop::whileLoopReverse(int n){
+        
+        while(n>=1){
+            std::cout<<n<<"\n";
+            n--;
+        }
+    }

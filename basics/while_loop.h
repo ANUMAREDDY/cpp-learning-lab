@@ -4,6 +4,7 @@
 class WhileLoop{
     public:
         void whileLoop();
+        void whileLoopReverse(int n);
 };
 
 #endif
