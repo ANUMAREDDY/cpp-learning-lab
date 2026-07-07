@@ -149,7 +149,7 @@
         return sum;
     }
 
-    bool WhileLoop::isArmstrongNumber(int n){
+    bool WhileLoop::isArmstrongNumber(int n){ //cubes of each digit in a number's sum equal to original number
         int sum{};
         int originalNumber{n};
         while(originalNumber>0){
@@ -160,7 +160,7 @@
         return sum == n;
     }
 
-    bool WhileLoop::isAPerfectNumber(int n){
+    bool WhileLoop::isAPerfectNumber(int n){ //All the divisor equal to the number then it is a perfect number 28.
     int sum{};
     int divisor{1};
     while(divisor<n){
@@ -173,7 +173,7 @@
 }
 
 void WhileLoop::printPrimeNumberInRange(int start, int end){
-    int divisor{1};
+    int divisor{2};
     while(start<=end){
         int count{};
         divisor = 1;
@@ -189,3 +189,35 @@ void WhileLoop::printPrimeNumberInRange(int start, int end){
         start++;
     }
 }
+
+void WhileLoop::printPrimeNumberInRangeUsingSqrtApproach(int start, int end){
+
+    while(start<=end){
+        int divisor{2};
+        bool isPrime{true};
+        while(divisor*divisor<=start){
+            if(start%divisor==0){
+                isPrime=false;
+            }
+            divisor++;
+        }
+        if(isPrime==true){
+            io.printInteger(start);
+        }
+        start++;
+    }
+}
+
+bool WhileLoop::checkTheGivenNumberIsAPrimeNumber(int number){
+    int divisor{2};
+
+    while(divisor*divisor<=number){
+        if(number%divisor==0){
+            return false;
+        }
+        divisor++;
+    }
+    return true;
+}
+
+

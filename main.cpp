@@ -16,7 +16,9 @@ int main() {
 
     //Basics
     WhileLoop wl;
-    wl.printPrimeNumberInRange(1, 100);
+    io.printBoolean(wl.checkTheGivenNumberIsAPrimeNumber(97));
+    //wl.printPrimeNumberInRangeUsingSqrtApproach(1, 100);
+    //wl.printPrimeNumberInRange(1, 100);
     //io.printBoolean(wl.isAPerfectNumber(28));
     //io.printBoolean(wl.isArmstrongNumber(153));
     //io.printInteger(wl.printSumOfDigitsInAGivenNumber(12345));
