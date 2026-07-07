@@ -16,7 +16,9 @@ int main() {
 
     //Basics
     WhileLoop wl;
-    io.printBoolean(wl.checkTheGivenNumberIsAPrimeNumber(97));
+    wl.printFibonacciSeriesForNTerms(5);
+    wl.printSumOfFibonacciSeriesForNTerms(5);
+    //io.printBoolean(wl.checkTheGivenNumberIsAPrimeNumber(97));
     //wl.printPrimeNumberInRangeUsingSqrtApproach(1, 100);
     //wl.printPrimeNumberInRange(1, 100);
     //io.printBoolean(wl.isAPerfectNumber(28));

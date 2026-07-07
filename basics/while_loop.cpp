@@ -220,4 +220,35 @@ bool WhileLoop::checkTheGivenNumberIsAPrimeNumber(int number){
     return true;
 }
 
+void WhileLoop::printFibonacciSeriesForNTerms(int n){
+    //Fibonacci starts with 0 
+    int previous{};
+    int current{1};
+    io.printInteger(previous);
+    io.printInteger(current);
+    int start{2};
+    int sum{};
+    while(start <= n){
+        sum = previous + current;
+        io.printInteger(sum);
+        previous = current;
+        current = sum;
+        start++;
+    }
+}
+
+void WhileLoop::printSumOfFibonacciSeriesForNTerms(int n){
+    int previous{};
+    int current{1};
+    int start{2};
+    int sum{};
+    while(start<=n){
+        sum = previous + current;
+        previous=current;
+        current=sum;
+        start++;
+    }
+    io.printInteger(sum);
+}
+
 

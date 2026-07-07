@@ -22,6 +22,8 @@ class WhileLoop{
         void printPrimeNumberInRange(int start, int end);
         void printPrimeNumberInRangeUsingSqrtApproach(int start, int end);
         bool checkTheGivenNumberIsAPrimeNumber(int number);
+        void printFibonacciSeriesForNTerms(int n);
+        void printSumOfFibonacciSeriesForNTerms(int n);
 
 };
 
