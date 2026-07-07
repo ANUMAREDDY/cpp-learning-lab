@@ -4,7 +4,7 @@
 void BasicsMain::basicsEntryPoint(){
 
     WhileLoop wl;
-    wl.factorsForAGivenNumber(36);
+    wl.sumOfFactorsForAGivenNumber(36);
     //wl.printAllTheNumbersDivisibleByNInSpecifiedRange(1,20,7);
     //wl.printSquareOfGivenOneToNumber(30);
     //wl.printCubeOfGivenOneToNumber(30);

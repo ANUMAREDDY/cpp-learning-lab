@@ -286,3 +286,15 @@ void WhileLoop::factorsForAGivenNumber(int n){
         start++;
     }
 }
+
+void WhileLoop::sumOfFactorsForAGivenNumber(int n){
+    int start{1};
+    int sum{};
+    while(start*start<=n){
+        if(n%start==0){
+            sum+=start; 
+        }
+        start++;
+    }
+    io.printInteger(sum);
+}

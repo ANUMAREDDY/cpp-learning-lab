@@ -28,6 +28,7 @@ class WhileLoop{
         void printCubeOfGivenOneToNumber(int n);
         void printAllTheNumbersDivisibleByNInSpecifiedRange(int start, int end, int n);
         void factorsForAGivenNumber(int n);
+        void sumOfFactorsForAGivenNumber(int n);
 
 };
 
