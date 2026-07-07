@@ -3,9 +3,11 @@
 
 void BasicsMain::basicsEntryPoint(){
 
- WhileLoop wl;
-    wl.printSquareOfGivenOneToNumber(30);
-    wl.printCubeOfGivenOneToNumber(30);
+    WhileLoop wl;
+    wl.factorsForAGivenNumber(36);
+    //wl.printAllTheNumbersDivisibleByNInSpecifiedRange(1,20,7);
+    //wl.printSquareOfGivenOneToNumber(30);
+    //wl.printCubeOfGivenOneToNumber(30);
     //wl.printFibonacciSeriesForNTerms(5);
     //wl.printSumOfFibonacciSeriesForNTerms(5);
     //io.printBoolean(wl.checkTheGivenNumberIsAPrimeNumber(97));

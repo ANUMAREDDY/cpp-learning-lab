@@ -268,7 +268,7 @@ void WhileLoop::printCubeOfGivenOneToNumber(int n){
     }
 }
 
-void printAllTheNumbersDivisibleByNInSpecifiedRange(int start, int end, int n){
+void WhileLoop::printAllTheNumbersDivisibleByNInSpecifiedRange(int start, int end, int n){
     while(start<=end){
         if(start%n==0){
             io.printInteger(start);
@@ -277,3 +277,12 @@ void printAllTheNumbersDivisibleByNInSpecifiedRange(int start, int end, int n){
     }
 }
 
+void WhileLoop::factorsForAGivenNumber(int n){
+    int start{1};
+    while(start*start<=n){
+        if(n%start==0){
+            io.printInteger(start);
+        }
+        start++;
+    }
+}
