@@ -251,4 +251,29 @@ void WhileLoop::printSumOfFibonacciSeriesForNTerms(int n){
     io.printInteger(sum);
 }
 
+void WhileLoop::printSquareOfGivenOneToNumber(int n){
+    int start{1};
+    while(start<=n){
+        io.printInteger(start*start);
+        start++;
+    }
+
+}
+
+void WhileLoop::printCubeOfGivenOneToNumber(int n){
+    int start{1};
+    while(start<=n){
+        io.printInteger(start*start*start);
+        start++;
+    }
+}
+
+void printAllTheNumbersDivisibleByNInSpecifiedRange(int start, int end, int n){
+    while(start<=end){
+        if(start%n==0){
+            io.printInteger(start);
+        }
+        start++;
+    }
+}
 

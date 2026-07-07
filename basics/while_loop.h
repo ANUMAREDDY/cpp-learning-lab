@@ -24,6 +24,9 @@ class WhileLoop{
         bool checkTheGivenNumberIsAPrimeNumber(int number);
         void printFibonacciSeriesForNTerms(int n);
         void printSumOfFibonacciSeriesForNTerms(int n);
+        void printSquareOfGivenOneToNumber(int n);
+        void printCubeOfGivenOneToNumber(int n);
+        void printAllTheNumbersDivisibleByNInSpecifiedRange(int start, int end, int n);
 
 };
 
