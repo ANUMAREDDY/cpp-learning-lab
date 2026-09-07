@@ -10,6 +10,9 @@ void IOHelper::printString(std::string message){
 void IOHelper::printInteger(int value){
     std::cout<<value<<"\n";
 }
+void IOHelper::writeLongLong(long long value){
+    std::cout<<value<<"\n";  
+}
 void IOHelper::printDouble(double value){
     std::cout<<value<<"\n";
 }

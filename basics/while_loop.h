@@ -9,6 +9,7 @@ class WhileLoop{
         void printOddNumbersInRange(int start, int end);
         void printStructuredMultiplicationTable(int start, int end, int whichTable);
         int sumOfFirstNNaturalNumbers(int n);
+        long long sumOfFirstNNaturalOptmised(int n);
         int sumOfFirstNEvenNumbers(int n);
         int sumOfFirstNOddNumbers(int n);
         int factorial(int n);
@@ -29,6 +30,8 @@ class WhileLoop{
         void printAllTheNumbersDivisibleByNInSpecifiedRange(int start, int end, int n);
         void factorsForAGivenNumber(int n);
         void sumOfFactorsForAGivenNumber(int n);
+        int lcmOfTwoNumbers(int a, int b);
+        int hcfOfTwoNumbers(int a, int b);
 
 };
 
